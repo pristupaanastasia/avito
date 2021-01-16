@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Booking</title>
+    </head>
+    <body>
+        <table>
+            <thead><th>room_id</th><th>booking_id </th><th>date_start</th><th>date_end</th></thead>
+            {{range . }}
+            <tr>
+                <td>{{.Room_Id}}</td>
+                <td>{{.Booking_Id}}</td>
+                <td>{{.Date_start}}</td>
+                <td>{{.Date_end}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>

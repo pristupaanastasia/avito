@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hotel</title>
+    </head>
+    <body>
+        <table>
+            <thead><th>Id</th><th>Price</th><th>Description</th><th>Update</th></thead>
+            {{range . }}
+            <tr>
+                <td>{{.Id}}</td>
+                <td>{{.Price}}</td>
+                <td>{{.Description}}</td>
+                <td>{{.Update}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
