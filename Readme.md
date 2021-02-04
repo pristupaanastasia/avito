@@ -11,6 +11,9 @@ pass: 1805
 \connect avito_db
 
 ### Выполнение
+
+docker-compose build
+
 sudo docker-compose up 
 
 ## Реализованные методы
